@@ -1,0 +1,279 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Open+Sans:wght@300;400;500;600;700&display=swap');
+
+:root{
+	--color-darkgray: #191c1e;
+	--color-gray: #595c5e;
+	--color-white: #cad2d6;
+	--color-black: #000000;
+	--color-yellow: #ffc760;
+	box-sizing: border-box;
+}
+
+body{
+	font-family: 'Open Sans', sans-serif;
+	margin: 0;
+}
+
+.container-mobile{
+	width: 90%;
+	margin: auto;
+	padding: 30px 0;
+}
+
+.gray{
+	color: var(--color-gray);
+}
+
+.white{
+	color: var(--color-white);
+}
+
+.bold{
+	font-weight: bold;
+}
+
+.bg-nav{
+	background-color: var(--color-darkgray);
+}
+
+.spikes {
+	position: relative;
+}
+  
+header .spikes::after {
+	content: '';
+	position: absolute;
+	right: 0;
+	left: -0%;
+	top: 100%;
+	z-index: 10;
+	display: block;
+	height: 50px;
+	background-size: 20px 100%;
+	background-image: linear-gradient(135deg, var(--color-darkgray) 25%, transparent 25%), linear-gradient(225deg, var(--color-darkgray) 25%, transparent 25%);
+	background-position: 0 0;
+}
+
+main .spikes::after {
+	content: '';
+	position: absolute;
+	right: 0;
+	left: -0%;
+	bottom: 0;
+	z-index: 10;
+	display: block;
+	height: 50px;
+	background-size: 20px 100%;
+	background-image: linear-gradient(45deg, var(--color-darkgray) 25%, transparent 25%), linear-gradient(321deg, var(--color-darkgray) 25%, transparent 25%);
+	background-position: 0 0;
+}
+
+/* ### MOBILE ### */
+
+/* HEADER  */
+
+/* NAV */
+header .nav-mobile{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 40px 20px 60px 20px;
+}
+
+header .nav-mobile img{
+	width: 50%;
+}
+
+#burger{
+	position: absolute;
+	right: 5%;
+	font-size: 2rem;
+	color: var(--color-white);
+}
+
+/* PRESENTATION */
+
+.presentation{
+	background-image: url("../images/slide_1.jpg");
+}
+
+.presentation .container-mobile{
+	padding: 40px 0 100px 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+}
+
+.presentation .container-mobile h1{
+	margin: 0 0 10px 0;
+	color: var(--color-white);
+	font-weight: 400;
+	text-transform: uppercase;
+}
+
+.presentation .container-mobile h2{
+	margin: 0;
+	color: var(--color-white);
+	font-weight: 400;
+	text-transform: uppercase;
+}
+
+.presentation .container-mobile p{
+	color: var(--color-white);
+}
+
+.presentation .container-mobile img{
+	width: 50%;
+	margin: auto;
+}
+
+.presentation .container-mobile .desc{
+	align-items: center;
+}
+
+.selector{
+	padding: 30px 0 0 0;
+	display: flex;
+}
+
+.selector a{
+	color: var(--color-white);
+	font-size: 2rem;
+	margin: auto;
+}
+
+.selector .title{
+	display: flex;
+	flex-direction: column;
+}
+
+.separator{
+	width: 70%;
+	border-bottom: 3px solid var(--color-white);
+	padding-top: 7px;
+	margin: auto;
+}
+
+/* BUTTONS */
+
+.buttons{
+	display: flex;
+	gap: 20px;
+	width: 90%;
+	justify-content: center;
+	margin: auto;
+}
+
+.btn{
+	text-decoration: none;
+	text-transform: uppercase;
+	border-radius: 2px;
+	padding: 10px 20px;
+}
+
+.btn-transparent{
+	color: var(--color-white);
+	border: 2px solid white;
+}
+
+.btn-yellow{
+	color: var(--color-black);
+	border: 2px solid var(--color-yellow);
+	background-color: var(--color-yellow);
+
+}
+
+/* ### MAIN ### */
+
+.qualities{
+	background-image: url(../images/back_2.png);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: justify;
+	text-align-last: center;
+}
+
+.qualities h2{
+	font-weight: 500;
+	text-transform: uppercase;
+}
+
+.card{
+	text-align: center;
+	align-items: center;
+}
+
+/* MENU DES PIZZAS  */
+
+.menu{
+	background-color: var(--color-darkgray);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: justify;
+	text-align-last: center;
+	color: var(--color-white);
+}
+
+.menu .pizza-cards{
+	text-align: center;
+	align-items: center;
+}
+
+.menu img{
+	width: 50%;
+}
+
+.menu h2, 
+.menu h3{
+	text-transform: uppercase;
+	font-weight: 500;
+}
+
+.menu p{
+	font-size: 0.8rem;
+}
+
+/* FOOTER */
+
+footer{
+	background-color: var(--color-darkgray);
+	border-top: 1px solid var(--color-gray);
+	display: flex;
+	justify-content: center;
+	text-align: justify;
+	text-align-last: center;
+}
+
+footer img{
+	width: 40%;
+	padding: 20px 0;
+}
+
+footer nav ul{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 15px;
+	padding: 0;
+	list-style: none;
+}
+
+
+footer nav ul li a{
+	text-transform: uppercase;
+	text-decoration: none;
+	color: var(--color-white);
+}
+
+.socialmedias{
+	display: flex;
+	justify-content: center;
+	gap: 20px;
+}
+.socialmedias a{
+	font-size: 1.5rem;
+	color: var(--color-white);
+}
